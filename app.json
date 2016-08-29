@@ -1,11 +1,14 @@
 {
-    "Debug" : true,
-    "ListenVars" : {
-	"Port" : "8080",
-	"Address": "127.0.0.1"
-    },
-    "Static" : {
-	"StaticURI" : "/static/",
-	"StaticDirs" : ["static/","posts/"]
-    }
+    "name": "aki237's Blog",
+    "description": "My Blog",
+    "keywords": [
+	"go",
+	"blog",
+	"github",
+	"web-hook"
+    ],
+    "image": "heroku/go:1.6",
+    "mount_dir": "src/github.com/aki237/bengine",
+    "website": "http://github.com/aki237/bengine",
+    "repository": "http://github.com/heroku/bengine"
 }
