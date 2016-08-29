@@ -35,7 +35,8 @@ body {
     height : 100%;
     width  : 100%;
     top : 0px;
-    background-image : url(/static/ssw.jpg);
+    color : #FEEDDC;
+    background-color : #344556;
     filter : blur(10px);
     opacity: 0.8;
     z-index : -10;
