@@ -1,1 +1,1 @@
-web: go run bengine.go
+web: bengine

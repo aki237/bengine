@@ -1,0 +1,29 @@
+{
+	"ImportPath": "github.com/aki237/bengine",
+	"GoVersion": "go1.7",
+	"GodepVersion": "v74",
+	"Deps": [
+		{
+			"ImportPath": "github.com/aki237/salt",
+			"Rev": "d0baf287164dcb576050d4a7aca67781f42facd6"
+		},
+		{
+			"ImportPath": "github.com/aki237/salt/models",
+			"Rev": "d0baf287164dcb576050d4a7aca67781f42facd6"
+		},
+		{
+			"ImportPath": "github.com/go-sql-driver/mysql",
+			"Comment": "v1.2-194-g7ebe0a5",
+			"Rev": "7ebe0a500653eeb1859664bed5e48dec1e164e73"
+		},
+		{
+			"ImportPath": "github.com/russross/blackfriday",
+			"Comment": "v1.4-38-g93622da",
+			"Rev": "93622da34e54fb6529bfb7c57e710f37a8d9cbd8"
+		},
+		{
+			"ImportPath": "github.com/shurcooL/sanitized_anchor_name",
+			"Rev": "10ef21a441db47d8b13ebcc5fd2310f636973c77"
+		}
+	]
+}
