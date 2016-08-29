@@ -1,0 +1,11 @@
+{
+    "Debug" : true,
+    "ListenVars" : {
+	"Port" : "8080",
+	"Address": "127.0.0.1"
+    },
+    "Static" : {
+	"StaticURI" : "/static/",
+	"StaticDirs" : ["static/","posts/"]
+    }
+}

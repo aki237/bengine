@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>aki237 : Home</title>
+    <link rel="icon" type="image/png" href="/static/favicon.png">
+    <link rel="stylesheet" href="/static/term.css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="/static/css/font-awesome.css" media="screen" charset="utf-8">
+  </head>
+  <body>
+    <div id="container">
+      <div class="split" id="left">
+	<center>
+	  <img src="/static/me.png" alt="This is me...!" id="profile"/><br><br>
+	  <h1 style="color:#C6C6C6">Akilan Elango</h1>
+	  <h4 style="padding-right:10px;padding-left:10px;color:#C6C6C6;">Bahaha means Bahaha..... Emacser... loves Go,C,C++... Shell and awk is a gods gift... baby lisper...</h4><br>
+	  <a class="left-a" href="https://github.com/aki237"><span class="fa fa-github"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+	  <a class="left-a" href="https://plus.google.com/+AkilanElango"><span class="fa fa-google-plus"></a>&nbsp;&nbsp;
+	  <a class="left-a" href="https://twitter.com/@aelango97" ><span class="fa fa-twitter"></a>
+	</center>
+	<div id="bg"></div>
+      </div>
+      <div class="split" id="right">
+	<center>
+	  <div id="posts">
+	    {{range .}}
+	    <div class="post">
+	      <a href="{{.URL}}">
+		<div class="details">
+		  <b class="p_title">{{.Title}}</b><br>
+		  <b style="font-size:12px">{{.PostLength}} Words</b><br>
+		  <b style="font-size:12px">{{.Date}}</b>
+		</div>
+		<div class="previewimage">
+		  <img src="{{.PostImage}}" id="preview" />
+		</div>
+	      </a>
+	    </div>
+	    {{end}}
+	  </div>
+	</center>
+      </div>
+    </div>
+  </body>
+</html>
