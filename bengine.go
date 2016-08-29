@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	fmt.Println(salt.Configure("app.json"))
+	fmt.Println(salt.Configure("salt.json"))
 	salt.Add404(NotFound)
 	fmt.Println(salt.AddRootApp(bengine.App))
 	fmt.Println(salt.Run())
