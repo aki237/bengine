@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"os/exec"
 
 	"os"
 
@@ -10,6 +11,10 @@ import (
 )
 
 func main() {
+	if _, err := os.Stat("./posts/"); os.IsNotExist(err) {
+		cmd := exec.Command("git", "clone", "https://github.com/aki237/bengine-posts", "posts")
+		cmd.Output()
+	}
 	fmt.Println(salt.Configure("salt.json"))
 	salt.Add404(NotFound)
 	fmt.Println(salt.AddRootApp(bengine.App))
