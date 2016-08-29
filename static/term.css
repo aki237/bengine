@@ -53,13 +53,14 @@ body {
 
 .post {
     min-width : 30%;
-    max-width : 50%;
-    min-height : 115px;
+    max-width : 70%;
+    min-height : 130px;
     background-color :  #FFFFDD;
     color : #344556;
     box-shadow : 2px 2px 2px #555555;
     animation-name : example-rev;
     animation-duration : 0.2s;
+    margin-bottom : 5px;
 }
 
 .details {
@@ -74,7 +75,6 @@ body {
     float : right;
     width : 30%;
     right : 0px;
-    bottom : 50%;
 }
 
 #preview {
