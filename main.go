@@ -3,6 +3,8 @@ package main
 import (
 	"fmt"
 
+	"os"
+
 	"github.com/aki237/bengine/bengine"
 	"github.com/aki237/salt"
 )
@@ -11,7 +13,7 @@ func main() {
 	fmt.Println(salt.Configure("salt.json"))
 	salt.Add404(NotFound)
 	fmt.Println(salt.AddRootApp(bengine.App))
-	fmt.Println(salt.Run())
+	fmt.Println(salt.RunAt(":" + os.Getenv("PORT")))
 }
 
 //Not found function
